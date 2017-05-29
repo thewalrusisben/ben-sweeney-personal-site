@@ -1,0 +1,18 @@
+.navBar {
+  background-color: black;
+  height: 60px;
+}
+
+.hamburgerContainer {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}

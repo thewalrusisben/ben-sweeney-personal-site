@@ -1,0 +1,63 @@
+
+.App {
+  position: relative;
+  text-align: center;
+  background: url('./trailhead.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 15%;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a, a:hover, a:link, a:active, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+
+.tile {
+  background-color: rgba(255,255,255, .9);
+  border: 1px black solid;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.tileHeaderBar {
+  text-align: left;
+}
+
+.tileHeaderText {
+  height: 35px;
+}
+
+.tileSubheaderText {
+  color: grey;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  .tileHeaderText {
+    height: 24px;
+  }
+}

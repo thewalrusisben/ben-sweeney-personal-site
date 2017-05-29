@@ -1,0 +1,13 @@
+.writingPageContainer {
+  width: 75%;
+  margin: 5% auto;
+  height: 80vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .writingPageContainer {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+}

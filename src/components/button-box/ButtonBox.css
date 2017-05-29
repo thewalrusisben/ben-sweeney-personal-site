@@ -1,0 +1,22 @@
+.buttonBox {
+  display: flex;
+  border: 1px black solid;
+  background-color: white;
+  float: right;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonBox img {
+  width: 80%;
+  margin: auto;
+}
+
+.buttonBox:hover {
+  transition: background-color .2s ease;
+  color: white;
+  background-color: black;
+}

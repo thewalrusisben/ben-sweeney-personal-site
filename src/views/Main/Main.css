@@ -1,0 +1,21 @@
+.welcomeMessage {
+  margin-top: 50px;
+}
+
+.browseButtonPosition {
+  position: relative;
+  display: inline-flex;
+  margin-top: 18%;
+}
+
+@media only screen and (max-width: 800px) {
+  .browseButtonPosition {
+    margin-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .browseButtonPosition {
+    margin-top: 50%;
+  }
+}
