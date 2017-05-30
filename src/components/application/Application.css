@@ -1,0 +1,42 @@
+.appHeader {
+  margin-bottom: 10px;
+}
+
+.appTitle {
+  margin-bottom: 2px;
+}
+
+.appSubtitle {
+  color: grey;
+}
+
+.appListItem {
+  list-style-type: none;
+  border-bottom: 1px black solid;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.appListItem img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.appDescription {
+  padding: 15px auto;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 500px) {
+  .appListItem img {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    display: inline;
+  }
+
+  .appDescription {
+    display: inline;
+  }
+}
