@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import request from 'request'
 import './BlogPostSearch.css'
 import ButtonBox from '../../components/button-box/ButtonBox'
+import Config from '../../config/config'
 
 class BlogPostSearch extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class BlogPostSearch extends Component {
   // in order to be invoked on component mount
   // and during state change when navigating pages.
   loadNewPosts () {
-    request.get(`http://localhost:8080/posts/${this.state.page}`, (error, response, body) => {
+    request.get(`${Config}/posts/${this.state.page}`, (error, response, body) => {
       if (error) {
         throw new Error(error)
       } else {

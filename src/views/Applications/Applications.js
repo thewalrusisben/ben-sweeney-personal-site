@@ -4,16 +4,17 @@ import request from 'request'
 import './Applications.css'
 import ButtonBox from '../../components/button-box/ButtonBox'
 import Application from '../../components/application/Application'
+import Config from '../../config/config'
 
 class Applications extends Component {
   constructor(props) {
-    super(props),
+    super(props)
     this.state = {
       applications: []
     }
   }
   componentDidMount () {
-    request.get(`http://localhost:8080/applications`, (error, response, body) => {
+    request.get(`${Config}/applications`, (error, response, body) => {
       if (error) {
         throw new Error(error)
       } else {
