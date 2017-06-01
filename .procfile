@@ -1,0 +1,6 @@
+web: bin/start-nginx -C nginx.conf
+
+--nginx.conf--
+location / {
+    try_files $uri /public/index.html;
+}
