@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import request from 'request'
+import axios from 'axios'
 import Config from '../../config/config'
 
 import './BlogPost.css'
@@ -14,13 +14,13 @@ class BlogPost extends Component {
   }
   componentDidMount () {
     let requestParams = this.props.id ? this.props.id : ''
-    request.get(`${Config}/post/${requestParams}`, (error, response, body) => {
-      if (error) {
-        throw new Error(error)
-      } else {
-        this.setState({post: {...JSON.parse(body)}})
-      }
-    }) 
+    axios.get(`${Config}/post/${requestParams}`)
+    .then((apiResponse) => {
+      this.setState({post: apiResponse.data})
+    })
+    .catch((err) => {
+      throw new Error(err)
+    })
   }
   render () {
     if (this.state.post.id) {

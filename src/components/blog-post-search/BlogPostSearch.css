@@ -1,5 +1,7 @@
 .posts {
   margin-top: 25px;
+  height: 80%;
+  overflow: scroll;
 }
 
 .postListItem {

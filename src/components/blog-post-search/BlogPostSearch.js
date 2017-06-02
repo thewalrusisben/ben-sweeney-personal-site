@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import request from 'request'
+import axios from 'axios'
 import './BlogPostSearch.css'
 import ButtonBox from '../../components/button-box/ButtonBox'
 import Config from '../../config/config'
@@ -21,12 +21,12 @@ class BlogPostSearch extends Component {
   // in order to be invoked on component mount
   // and during state change when navigating pages.
   loadNewPosts () {
-    request.get(`${Config}/posts/${this.state.page}`, (error, response, body) => {
-      if (error) {
-        throw new Error(error)
-      } else {
-        this.setState({posts: [...JSON.parse(body)]})
-      }
+    axios.get(`${Config}/posts/${this.state.page}`)
+    .then((apiResponse) => {
+      this.setState({posts: apiResponse.data})
+    })
+    .catch((err) => {
+      throw new Error(err)
     })
   }
 

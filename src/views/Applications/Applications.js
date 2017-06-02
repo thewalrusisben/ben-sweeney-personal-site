@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import request from 'request'
+import axios from 'axios'
 import './Applications.css'
 import ButtonBox from '../../components/button-box/ButtonBox'
 import Application from '../../components/application/Application'
@@ -14,12 +14,12 @@ class Applications extends Component {
     }
   }
   componentDidMount () {
-    request.get(`${Config}/applications`, (error, response, body) => {
-      if (error) {
-        throw new Error(error)
-      } else {
-        this.setState({applications: [...JSON.parse(body)]})
-      }
+    axios.get(`${Config}/applications`)
+    .then((apiResponse) => {
+      this.setState({applications: apiResponse.data})
+    })
+    .catch((err) => {
+      throw new Error(err)
     })
   }
   render () {
