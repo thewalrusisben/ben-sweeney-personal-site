@@ -44,8 +44,8 @@ class Drawer extends Component {
             <img src={close} alt='Close Drawer' className='closeDrawerIcon' onClick={this.toggleDrawer} />
           </div>
           <ul className='drawerListContainer'>
-            <Link to='/writing'><li><span>writing / ideas</span></li></Link>
-            <Link to='apps'><li><span>apps / code</span></li></Link>
+            <Link to='/writing'><li><span>writing</span></li></Link>
+            <Link to='apps'><li><span>apps</span></li></Link>
           </ul>
         </div>
       </div>

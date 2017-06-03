@@ -1,6 +1,6 @@
 .buttonBox {
   display: flex;
-  border: 1px black solid;
+  border: 1px #75d2b5 solid;
   background-color: white;
   float: right;
   width: 25px;
@@ -11,6 +11,7 @@
 }
 
 .buttonBox img {
+  pointer-events: none;
   width: 80%;
   margin: auto;
 }
@@ -18,5 +19,5 @@
 .buttonBox:hover {
   transition: background-color .2s ease;
   color: white;
-  background-color: black;
+  background-color: #75d2b5;
 }

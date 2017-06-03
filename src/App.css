@@ -2,11 +2,7 @@
 .App {
   position: relative;
   text-align: center;
-  background: url('./trailhead.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 15%;
-  background-size: cover;
+  background-color: whitesmoke;
   height: 100vh;
   overflow: hidden;
 }

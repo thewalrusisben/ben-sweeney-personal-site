@@ -20,16 +20,17 @@ class ButtonBox extends Component {
   }
 
   swapImage (elm) {
-    if (elm.target.name === 'more') {
+    console.log(elm.target.dataset.name)
+    if (elm.target.dataset.name === 'more') {
       this.state.image === MoreBlack ? this.setState({image: MoreWhite}) : this.setState({image: MoreBlack})  
     }
-    if (elm.target.name === 'close') {
+    if (elm.target.dataset.name === 'close') {
       this.state.image === CloseBlack ? this.setState({image: CloseWhite}) : this.setState({image: CloseBlack})  
     }
-    if (elm.target.name === 'back') {
+    if (elm.target.dataset.name === 'back') {
       this.state.image === BackBlack ? this.setState({image: BackWhite}) : this.setState({image: BackBlack})
     }
-    if (elm.target.name === 'forward') {
+    if (elm.target.dataset.name === 'forward') {
      this.state.image === ForwardBlack ? this.setState({image: ForwardWhite}) : this.setState({image: ForwardBlack}) 
     }
   }
@@ -48,14 +49,14 @@ class ButtonBox extends Component {
 
   handleClickEvent (elm) {
     if (this.props.handleClickFromChild) {
-      this.props.handleClickFromChild(elm.target.name)  
+      this.props.handleClickFromChild(elm.target.dataset.name)  
     }
   }
 
   render () {
     return (
-      <div className="buttonBox">
-        <img src={this.state.image} alt="View More Posts" onMouseOver={this.swapImage} onMouseLeave={this.swapImage} onClick={this.handleClickEvent} name={this.props.label} />
+      <div className="buttonBox" onMouseOver={this.swapImage} onMouseLeave={this.swapImage} onClick={this.handleClickEvent} data-name={this.props.label} >
+        <img src={this.state.image} alt="View More Posts"/>
       </div>
     )
   }
