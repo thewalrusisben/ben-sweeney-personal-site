@@ -1,7 +1,16 @@
 .postContents {
   padding-top: 25px;
   text-align: justify;
-  height: 90%;
+  height: 85%;
   overflow: scroll;
+}
+
+#centerImg {
+  display: grid;
+}
+
+#centerImg img {
+  width: 60%;
+  margin: 0 auto;
 }
 
