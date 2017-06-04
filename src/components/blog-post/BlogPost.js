@@ -19,7 +19,7 @@ class BlogPost extends Component {
       this.setState({post: apiResponse.data})
     })
     .catch((err) => {
-      throw new Error(err)
+      console.log(err)
     })
   }
   render () {

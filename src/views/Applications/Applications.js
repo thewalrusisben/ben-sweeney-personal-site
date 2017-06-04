@@ -19,7 +19,7 @@ class Applications extends Component {
       this.setState({applications: apiResponse.data})
     })
     .catch((err) => {
-      throw new Error(err)
+      console.log(err)
     })
   }
   render () {

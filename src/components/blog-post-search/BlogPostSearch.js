@@ -26,7 +26,7 @@ class BlogPostSearch extends Component {
       this.setState({posts: apiResponse.data})
     })
     .catch((err) => {
-      throw new Error(err)
+      console.log(err)
     })
   }
 
