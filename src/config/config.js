@@ -1,7 +1,7 @@
 const env = process.env.NODE_ENV || 'development'
 
 const Config = {
-  production: {apiUrl: 'http://api.bensweeney.me'},
+  production: {apiUrl: 'http://ben-sweeney-api.herokuapp.com'},
   development: {apiUrl: 'http://localhost:8081'}
 }
 
