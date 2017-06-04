@@ -13,9 +13,8 @@
 }
 
 .contents {
-  padding-top: 25px;
   text-align: justify;
-  height: 90%;
+  height: 85%;
   width: 100%;
   overflow: scroll;
 }
