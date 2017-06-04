@@ -20,7 +20,6 @@ class ButtonBox extends Component {
   }
 
   swapImage (elm) {
-    console.log(elm.target.dataset.name)
     if (elm.target.dataset.name === 'more') {
       this.state.image === MoreBlack ? this.setState({image: MoreWhite}) : this.setState({image: MoreBlack})  
     }
