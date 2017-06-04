@@ -14,8 +14,8 @@
   cursor: pointer;
 }
 
-.postListItem:hover {
-  background-color: #EAEAEA;
+.postListItem:hover * {
+  color: #75d2b5
 }
 
 .postName {

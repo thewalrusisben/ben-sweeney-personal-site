@@ -3,15 +3,16 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  transition: background-color .2s ease;
+  transition: background-color .4s ease;
   background-color: rgba(000,000,000,0.4);
+  top: 0px;
 }
 
 .drawerContainer {
   position: fixed;
   height: 100%;
   width: 250px;
-  background-color: #373737;
+  background-color: white;
   float: left;
   top: 0px;
   left: -300px;
@@ -91,17 +92,6 @@
   padding: 0px;
   margin-bottom: 0px;
   margin-top: 60px;
-}
-
-.drawerListContainer li {
-  border-bottom: 2px solid white;
-  padding-top: 10px;
-  cursor: pointer;
-}
-
-.drawerListContainer li:hover {
-  transition: background-color .1s ease;
-  background-color: rgba(000,000,000,.2)
 }
 
 .drawerListContainer li span {

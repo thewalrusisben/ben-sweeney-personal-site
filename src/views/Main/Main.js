@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Main.css'
-import WhiteButton from '../../components/button-white/WhiteButton'
+import ButtonPrimary from '../../components/button-primary/ButtonPrimary'
 
 
 const Main = () => {
@@ -12,8 +12,8 @@ const Main = () => {
         <h2>this is a blog, amongst other things.</h2>
       </div>
       <div className={'browseButtonPosition browseButtonPositionTablet'}>
-        <Link to='/writing'><WhiteButton label={'writing'} /></Link>
-        <Link to='/apps'><WhiteButton label={'apps'} /></Link>
+        <Link to='/writing'><ButtonPrimary label={'writing'} /></Link>
+        <Link to='/apps'><ButtonPrimary label={'apps'} /></Link>
       </div>
     </div>
   )

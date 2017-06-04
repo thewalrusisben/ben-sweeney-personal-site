@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './WhiteButton.css'
+import './ButtonPrimary.css'
 
-class WhiteButton extends Component {
+class ButtonPrimary extends Component {
   constructor(props) {
     super(props)
     this.toggleDrawer = this.toggleDrawer.bind(this)
@@ -13,12 +13,14 @@ class WhiteButton extends Component {
   }
   render () {
     return (
-      <div className={'whiteButtonContainer'} onClick={this.toggleDrawer}>
-        <span>{this.props.label}</span>
+      <div className={'buttonContainer'} onClick={this.toggleDrawer}>
+        <div className={'button'}>
+          <span>{this.props.label}</span>
+        </div>
       </div>
     )
   }
 
 }
 
-export default WhiteButton
+export default ButtonPrimary

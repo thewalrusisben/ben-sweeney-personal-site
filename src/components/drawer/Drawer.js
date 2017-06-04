@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Drawer.css'
-import close from './close.svg'
+import close from './close-black.svg'
+import ButtonPrimary from '../../components/button-primary/ButtonPrimary'
 
 class Drawer extends Component {
   constructor(props) {
@@ -44,8 +45,8 @@ class Drawer extends Component {
             <img src={close} alt='Close Drawer' className='closeDrawerIcon' onClick={this.toggleDrawer} />
           </div>
           <ul className='drawerListContainer'>
-            <Link to='/writing'><li><span>writing</span></li></Link>
-            <Link to='apps'><li><span>apps</span></li></Link>
+            <Link to='/writing'><ButtonPrimary label={'writing'} /></Link>
+            <Link to='/apps'><ButtonPrimary label={'apps'} /></Link>
           </ul>
         </div>
       </div>

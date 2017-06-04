@@ -16,5 +16,6 @@
   padding-top: 25px;
   text-align: justify;
   height: 90%;
+  width: 100%;
   overflow: scroll;
 }

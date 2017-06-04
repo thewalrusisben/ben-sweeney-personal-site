@@ -1,26 +1,32 @@
-.whiteButtonContainer {
-
-  width: 100px;
+.buttonContainer {
+  width: 150px;
   height: 40px;
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+.button {
+  width: 100px;
+  margin: 0 auto;
   font-size: 24px;
   transition: font-size .2s ease;
   color: black;
   transition: color .2s ease;
   border-bottom: black dotted 1px;
   transition: border-bottom .2s ease;
-  cursor: pointer;
-  margin: 5px 10px;
 }
 
-.whiteButtonContainer:hover {
-  transition: color .2s ease;
-  transition: border-bottom .2s ease;
+.buttonContainer:hover .button {
   color: #75d2b5;
+  transition: color .2s ease;
   border-bottom: #75d2b5 dotted 1px;
+  transition: border-bottom .2s ease;
+  width: 150px;
+  transition: width .2s ease;
   font-size: 26px;
 }
 
-.whiteButtonContainer span {
+.buttonContainer span {
   display: block;
   cursor: pointer;
 }
