@@ -12,7 +12,7 @@ app.get('/*', function (req, res) {
 
 setInterval(() => {
   console.log('ping...')
-  axios.get(`http://localhost:8081/pingpong`)
+  axios.get(`http://ben-sweeney-api.herokuapp.com/pingpong`)
   .then((response) => {
     console.log(`${response.data.message}...`)
   })
