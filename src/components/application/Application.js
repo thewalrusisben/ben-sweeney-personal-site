@@ -26,7 +26,7 @@ class Application extends Component {
     return (
       <li className="appListItem">
         <div className="appHeader">
-          <h2 className="appTitle"><a href="" target="_blank">{this.props.title}</a></h2>
+          <h2 className="appTitle">{this.props.title}</h2>
           <Subtitle github={this.props.github} subtitle={this.props.subtitle} />
         </div>
         { this.props.image_url ? <img id="screenshot" src={this.props.image_url} alt={`${this.props.title} Application Screen Shot`} /> : <div />}
