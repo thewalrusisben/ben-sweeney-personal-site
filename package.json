@@ -1,0 +1,43 @@
+{
+  "name": "bs-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio and blog",
+  "main": "server.ts",
+  "scripts": {
+    "watch": "concurrently \"webpack -w\" && \"tsc -w server.ts\"",
+    "dev": "nodemon server.js",
+    "build": "webpack && tsc server.ts",
+    "start": "npm run build && node server.js"
+  },
+  "author": "Ben Sweeney",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/express": "^4.0.39",
+    "@types/lodash": "^4.14.87",
+    "@types/react": "^16.0.26",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-router-dom": "^4.2.3",
+    "axios": "^0.17.1",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "html-webpack-plugin": "^2.30.1",
+    "lodash": "^4.17.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "source-map-loader": "^0.2.3",
+    "standard": "^10.0.3",
+    "style-loader": "^0.19.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.9.1",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-hot-middleware": "^2.21.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
